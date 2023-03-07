@@ -1,107 +1,62 @@
-# This repo is no longer maintained. Consider using `npm init vite` and selecting the `svelte` option or — if you want a full-fledged app framework and don't mind using pre-1.0 software — use [SvelteKit](https://kit.svelte.dev), the official application framework for Svelte.
+# FRONTEND (con Svelte)
 
----
+>ENLACES A FRONTEND Y BACKEND DE NUESTRA APLICACIÓN
+>
+>Nuestra aplicación tiene por detrás una API REST de un taller la cual la podemos encontrar en **[tallerbackend](https://tallerbackend.onrender.com/)**
+>El frontend de nuestra aplicación lo podemos encontrar en  **[tallerfrontend](https://tallerfrontend.vercel.app/)**
 
-# svelte app
+## ¿Qué es Svelte?
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Svelte es un **compilador** aunque también puede tomarse como framework. Svelte realiza una compilación de nuestro código, convirtiendo sus componentes en código imperativo altamente eficiente. 
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+## Desarrollo por componentes
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+Svelte permite el desarrollo por componentes. 
+
+Un componente es **una parte de una aplicación web que encapsula código HTML, CSS y JavaScript**, de forma que no puede ser afectado por el código de la página que lo incluye, salvo que usemos los mecanismos establecidos a tal efecto. Por tanto permiten la reutilización y encapsulación de código cliente.
+
+## Ventajas de uso de Svelte
+
+- Tenemos que escribir mucho menos código frente a otros frameworks.
+- El código final se ejecuta de forma muy eficiente y rápida.
+- El peso (cantidad de KB) de la aplicación final es muy pequeño.
+- Facilita la programación reactiva.
+- Sintaxis más simple
+
+## Inicio de un proyecto de svelte
+
+Para iniciar un proyecto de svelte, ejecutamos:
+
+```console
+npx  degit  sveltejs/template   nombre-proyecto
 ```
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+## TallerApp
 
+Nuestra aplicación trata de un taller en el cual se pueden insertar piezas, borrar y modificar. A su vez, también se pueden hacer las mismas operaciones con los clientes
 
-## Get started
+**Ejemplos visuales de nuestra aplicación**
 
-Install the dependencies...
+## EJEMPLOS FRONTEND
 
-```bash
-cd svelte-app
-npm install
-```
+**INICIO**
+![Inicio](Screenshots/Inicio.png)
 
-...then start [Rollup](https://rollupjs.org):
+**PIEZAS**
+![Piezas](Screenshots/Piezas.png)
 
-```bash
-npm run dev
-```
+**CLIENTES**
+![Clientes](Screenshots/Clientes.png)
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+## EJEMPLOS BACKEND
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+![Backend](Screenshots/BACK.png)
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+## Resumen
 
-## Building and running in production mode
+En resumen, en esta tarea hemos realizado y aprendido lo siguinete: 
 
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+- Crear un repositorio en github
+- Configurar una clave SSH 
+- Uso de comandos más frecuentes de git
+- Uso de markdown para la realización de **README.md**
